@@ -1,4 +1,4 @@
-# Enzo Bouthier — Portfolio VICODER !
+# Enzo Bouthier — Portfolio VIBECODER !
 
 Portfolio personnel en HTML/CSS/JS, avec une interface plein écran inspirée des dashboards Linux/terminal et une palette noir + bleu.
 
