@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio d'Enzo Bouthier — étudiant ingénieur informatique à EPITA, développeur et créateur.">
+  <title>enzo@portfolio:~</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Accueil"><span class="logo">A</span><span>enzo@portfolio:~</span><b>›</b></a>
+    <div class="status"><span class="dot"></span> online <i>│</i> arch / hyprland <i>│</i> <span id="clock">--:--</span> <i>│</i> EPITA</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="side-label">NAVIGATION</div>
+      <a class="nav active" href="#home"><span class="icon">⌂</span><span>Accueil</span></a>
+      <a class="nav" href="#about"><span class="icon">◎</span><span>À propos</span></a>
+      <a class="nav" href="#projects"><span class="icon">&lt;/&gt;</span><span>Projets</span></a>
+      <a class="nav" href="#skills"><span class="icon">⚒</span><span>Compétences</span></a>
+      <a class="nav" href="#path"><span class="icon">◈</span><span>Parcours</span></a>
+      <a class="nav" href="#creative"><span class="icon">✦</span><span>Créations</span></a>
+      <a class="nav" href="#contact"><span class="icon">@</span><span>Contact</span></a>
+      <div class="side-bottom"><span class="mini-logo">A</span><small>black / blue<br>terminal mode</small></div>
+    </aside>
+
+    <main>
+      <div class="windowbar">
+        <span id="pathLabel">~/home</span>
+        <span class="window-actions"><b></b><b></b><b></b></span>
+      </div>
+
+      <section id="home" class="view active-view">
+        <div class="home-grid">
+          <article class="panel hero">
+            <div class="prompt">enzo@portfolio:~$ <span>whoami</span></div>
+            <h1>Enzo Bouthier<span class="cursor"></span></h1>
+            <p class="subtitle">Étudiant en deuxième année à <strong>EPITA</strong> · développeur · créateur.</p>
+            <p class="intro-line">Je construis des projets où se rencontrent code, systèmes, jeux vidéo, réseau et création.</p>
+            <div class="tags"><span>EPITA</span><span>C / Python</span><span>Linux</span><span>Games</span><span>Réseau</span></div>
+          </article>
+
+          <article class="panel terminal-card">
+            <div class="window-title"><span>TERMINAL</span><b>● ● ●</b></div>
+            <div class="terminal-lines">
+              <div><em>$</em> cat profile.txt</div>
+              <div class="muted">curious = true</div>
+              <div class="muted">learning = always</div>
+              <div class="muted">projects += 1</div>
+              <div><em>$</em> ./start_project.sh</div>
+              <div class="blue">ready.</div>
+              <div class="cursor-line">█</div>
+            </div>
+          </article>
+
+          <article class="panel quick-panel">
+            <div class="window-title"><span>QUICK ACCESS</span><b>›</b></div>
+            <div class="quick-grid">
+              <a href="#projects"><strong>04+</strong><small>projets</small></a>
+              <a href="#skills"><strong>C / PY</strong><small>langages</small></a>
+              <a href="#creative"><strong>✦</strong><small>créations</small></a>
+              <a href="#contact"><strong>↗</strong><small>réseaux</small></a>
+            </div>
+          </article>
+
+          <article class="panel quote-panel">
+            <span class="quote-mark">//</span>
+            <p>« Comprendre comment les choses fonctionnent, puis aller jusqu'au bout de l'idée. »</p>
+            <span class="quote-cursor">_</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="view">
+        <div class="section-grid two-col">
+          <article class="panel content-panel">
+            <div class="window-title"><span>ABOUT.MD</span><b>01</b></div>
+            <h2>À propos de moi</h2>
+            <p>Je suis Enzo, étudiant en deuxième année à <strong>EPITA</strong>, école d'ingénieurs en informatique.</p>
+            <p>Je m'intéresse particulièrement au développement logiciel, aux systèmes, au réseau, aux jeux vidéo, à l'IA et à tout ce qui permet de comprendre ce qui se passe « sous le capot ».</p>
+            <p>Mes projets m'ont amené à travailler aussi bien sur du C bas niveau que sur des jeux Python/Pygame, du réseau UDP, des shaders, du web et des systèmes Linux.</p>
+          </article>
+          <article class="panel content-panel">
+            <div class="window-title"><span>TRAITS.CONFIG</span><b>02</b></div>
+            <div class="trait-list">
+              <div><b>01</b><span>Curieux & autonome</span></div>
+              <div><b>02</b><span>Adaptable à de nouveaux projets</span></div>
+              <div><b>03</b><span>Esprit d'équipe</span></div>
+              <div><b>04</b><span>Apprentissage continu</span></div>
+            </div>
+            <div class="quote-box">&gt; build, break, understand, rebuild.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="view">
+        <div class="section-head"><div><span class="eyebrow">~/projects</span><h2>Mes créations techniques</h2></div><span class="count">04 PROJECTS</span></div>
+        <div class="project-grid">
+          <article class="panel project-card featured"><div class="project-number">01</div><div class="thumb oni">鬼</div><h3>Onigiri</h3><p>Jeu 2D coopératif inspiré du metroidvania et du roguelike. Réseau UDP, lobby, shaders ModernGL, éditeur de cartes et pixel art.</p><div class="chips"><i>Python</i><i>Pygame</i><i>UDP</i><i>ModernGL</i></div></article>
+          <article class="panel project-card"><div class="project-number">02</div><div class="thumb ocr">A B<br>C D</div><h3>OCR — Word Search Solver</h3><p>Pipeline de traitement d'image, reconnaissance de caractères et solveur de mots croisés en C avec SDL2.</p><div class="chips"><i>C</i><i>SDL2</i><i>IA</i><i>Image Processing</i></div></article>
+          <article class="panel project-card"><div class="project-number">03</div><div class="thumb cards">◇</div><h3>Godot + Supabase</h3><p>Prototype de jeu de cartes avec authentification, sauvegarde des données et interactions par glissement.</p><div class="chips"><i>Godot</i><i>Supabase</i><i>GDScript</i></div></article>
+          <article class="panel project-card"><div class="project-number">04</div><div class="thumb stock">↗</div><h3>Web & projets personnels</h3><p>Site de suivi boursier, Raspberry Pi NAS, jeux multijoueurs, LeetCode et différents projets C / réseau.</p><div class="chips"><i>Web</i><i>Linux</i><i>Git</i></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="view">
+        <div class="section-head"><div><span class="eyebrow">~/skills</span><h2>Stack & compétences</h2></div><span class="count">SYSTEM READY</span></div>
+        <div class="skills-grid">
+          <article class="panel skill-panel"><div class="window-title"><span>LANGUAGES</span></div><div class="skill-list"><span>C</span><span>Python</span><span>Java</span><span>C#</span><span>JavaScript</span><span>SQL</span></div></article>
+          <article class="panel skill-panel"><div class="window-title"><span>DEV / TOOLS</span></div><div class="skill-list"><span>Git</span><span>Linux</span><span>Bash</span><span>Pygame</span><span>Godot</span><span>SDL2</span><span>ModernGL</span><span>NumPy</span></div></article>
+          <article class="panel skill-panel"><div class="window-title"><span>SYSTEMS / NETWORK</span></div><div class="skill-list"><span>Arch Linux</span><span>NixOS</span><span>WSL</span><span>TCP / UDP</span><span>Sockets</span><span>MiniUPnP</span></div></article>
+          <article class="panel skill-panel"><div class="window-title"><span>OTHER</span></div><div class="skill-list"><span>IA</span><span>Image Processing</span><span>Jeux vidéo</span><span>Supabase</span><span>Firebase</span></div></article>
+        </div>
+      </section>
+
+      <section id="path" class="view">
+        <div class="section-head"><div><span class="eyebrow">~/path</span><h2>Parcours</h2></div><span class="count">EPITA / 2026</span></div>
+        <div class="section-grid two-col">
+          <article class="panel content-panel timeline-panel">
+            <div class="window-title"><span>EDUCATION.LOG</span></div>
+            <div class="timeline">
+              <div><b>2025 → aujourd'hui</b><strong>EPITA · 2ème année</strong><small>Formation d'ingénieur en informatique.</small></div>
+              <div><b>2022 → 2023</b><strong>Terminale · Math / PC / NSI</strong><small>Maths expertes · St-Louis Blanche de Castille.</small></div>
+              <div><b>2022</b><strong>Baccalauréat · mention Bien</strong><small>Spécialités scientifiques et NSI.</small></div>
+              <div><b>2019 → 2022</b><strong>Collège · mention Très Bien</strong><small>Villemomble.</small></div>
+            </div>
+          </article>
+          <article class="panel content-panel">
+            <div class="window-title"><span>EXPERIENCES.LOG</span></div>
+            <div class="experience-list">
+              <div><b>PROJETS PERSONNELS</b><span>Onigiri · OCR · web · NAS · réseau</span></div>
+              <div><b>STAGE · 210H / 1,5 MOIS</b><span>Développement web / data</span></div>
+              <div><b>SPORT & ANIMATION</b><span>Volleyball · baby-volley · co-animation</span></div>
+              <div><b>AUTRES</b><span>TFJM² sélectionné · découverte contrôlée de Kali Linux</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="creative" class="view">
+        <div class="section-head"><div><span class="eyebrow">~/creative</span><h2>Créations artistiques</h2></div><span class="count">VISUAL_MODE</span></div>
+        <div class="creative-layout">
+          <article class="panel art-main">
+            <div class="window-title"><span>CREATIVE.EXE</span><b>running</b></div>
+            <div class="art-stage"><div class="art-symbol">✦</div><div class="art-grid"></div><div class="art-orbit"></div><div class="art-label">VISUAL EXPERIMENTS<br><small>art / design / pixel / ideas</small></div></div>
+          </article>
+          <article class="panel content-panel art-info">
+            <div class="window-title"><span>INSTAGRAM</span></div>
+            <h2>Mes créations</h2>
+            <p>Je partage mes créations visuelles et artistiques sur Instagram.</p>
+            <a class="big-link" href="https://www.instagram.com/enzo_bouthier/" target="_blank" rel="noopener"><span>◎</span><div><b>@enzo_bouthier</b><small>ouvrir Instagram ↗</small></div></a>
+            <p class="muted">Galerie externe : les créations sont volontairement conservées sur mon compte pour garder les publications originales.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="view">
+        <div class="section-head"><div><span class="eyebrow">~/contact</span><h2>Me retrouver</h2></div><span class="count">ONLINE</span></div>
+        <div class="contact-grid">
+          <article class="panel contact-card"><span class="contact-icon">◉</span><h3>GitHub</h3><p>Mes projets et mon code.</p><a href="https://github.com/Grenixx" target="_blank" rel="noopener">github.com/Grenixx ↗</a></article>
+          <article class="panel contact-card"><span class="contact-icon">◎</span><h3>Instagram</h3><p>Mes créations artistiques.</p><a href="https://www.instagram.com/enzo_bouthier/" target="_blank" rel="noopener">@enzo_bouthier ↗</a></article>
+          <article class="panel contact-card"><span class="contact-icon">◈</span><h3>Discord</h3><p>Pour me retrouver directement.</p><div class="copy-value" data-copy="grenix0689">grenix0689 <small>cliquer pour copier</small></div></article>
+        </div>
+        <div class="panel contact-terminal"><span class="blue">enzo@portfolio:~$</span> echo "merci d'être passé"<br><span class="muted">connection closed with style.</span></div>
+      </section>
+    </main>
+  </div>
+
+  <footer><span>› portfolio.exe running</span><span>Enzo Bouthier // EPITA // 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
